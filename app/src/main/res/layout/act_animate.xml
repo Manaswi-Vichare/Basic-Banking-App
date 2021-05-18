@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Animate">
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="0dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="@color/Transparent"
+
+        android:onClick="start"
+        android:strokeWidth="10"
+        android:strokeColor="#FFFFFF"
+        android:text="@string/start"
+        android:textColor="#9C27B0"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bankingLabel"
+        app:rippleColor="#9C27B0" />
+
+    <ImageView
+        android:id="@+id/coinImg"
+        android:layout_width="275dp"
+        android:layout_height="263dp"
+        android:layout_marginTop="14dp"
+        android:background="@color/Transparent"
+        android:backgroundTint="#FFFFFF"
+        android:contentDescription="@string/desc"
+        android:scaleType="centerInside"
+
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/basic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bankicon"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/symbols"
+        android:layout_width="494dp"
+        android:layout_height="531dp"
+        android:layout_marginEnd="140dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bankingLabel"
+        app:srcCompat="@drawable/circle"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/symbols2"
+        android:layout_width="300dp"
+        android:layout_height="316dp"
+
+        android:layout_marginEnd="4dp"
+        android:background="@color/Transparent"
+        android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/nameText"
+        app:srcCompat="@drawable/circle"
+        app:tint="#EEBDF6"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="272dp"
+        android:layout_height="296dp"
+        android:layout_marginStart="204dp"
+        android:layout_marginBottom="116dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toBottomOf="@+id/coinImg"
+        app:layout_constraintStart_toStartOf="@+id/coinImg"
+        app:srcCompat="@drawable/circle"
+        app:tint="#FFFFFF"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginEnd="127dp"
+        android:layout_marginBottom="150dp"
+
+        android:fontFamily="@font/crimson_text_italic"
+        android:text="@string/name"
+        android:textColor="#9C27B0"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/byText" />
+
+    <TextView
+        android:id="@+id/basic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginEnd="332dp"
+        android:fontFamily="@font/abril_fatface"
+        android:text="@string/basic"
+        android:textColor="#9C27B0"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/bankingLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coinImg" />
+
+    <TextView
+        android:id="@+id/bankingLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/abril_fatface"
+        android:text="@string/Banking"
+        android:textColor="#9C27B0"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/basic" />
+
+    <TextView
+        android:id="@+id/byText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="175dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="150dp"
+        android:fontFamily="@font/crimson_text_italic"
+        android:text="@string/by"
+        android:textColor="#9C27B0"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/nameText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.235"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

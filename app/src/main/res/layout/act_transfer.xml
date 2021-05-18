@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context=".Transfer"
+    tools:visibility="visible">
+
+    <Button
+        android:id="@+id/transferButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:alpha="0"
+        android:backgroundTint="#9C27B0"
+        android:textColor="@color/white"
+        android:onClick="onTransferClick"
+        android:text="@string/transfer2"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/TransactHist"
+        android:layout_width="281dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginEnd="75dp"
+        android:alpha="0"
+        android:backgroundTint="@color/purple_200"
+        android:onClick="onHistory"
+        android:text="@string/transaction_history"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/homeButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/transferButton" />
+
+    <Button
+        android:id="@+id/homeButton"
+        android:layout_width="281dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginEnd="75dp"
+        android:alpha="0"
+        android:backgroundTint="#9C27B0"
+        android:onClick="onHome"
+        android:text="@string/home"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TransactHist" />
+
+    <EditText
+        android:id="@+id/amtView"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:autofillHints=""
+        android:textAlignment="center"
+        android:ems="10"
+
+        android:inputType="numberDecimal|number"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="LabelFor" />
+
+    <ImageView
+        android:id="@+id/arrowImg1"
+        android:layout_width="132dp"
+        android:layout_height="122dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="6dp"
+        android:background="@color/Transparent"
+        android:contentDescription="@string/transfer"
+        android:rotation="-45"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.423"
+        app:srcCompat="@drawable/money"
+        app:tint="#D0AED6"
+        tools:srcCompat="@drawable/money" />
+
+    <ImageView
+        android:id="@+id/arrowImg2"
+        android:layout_width="130dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginBottom="70dp"
+        android:background="@color/Transparent"
+        android:contentDescription="@string/transfer1"
+        android:rotation="45"
+        android:rotationX="180"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.574"
+        app:srcCompat="@drawable/money"
+        app:tint="#D0AED6"
+        tools:srcCompat="@drawable/money" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="175dp"
+        android:alpha="0"
+        android:background="@drawable/roundcorner"
+
+        android:paddingTop="60sp"
+        android:text="@string/enter_the_amount_to_be_transfered"
+        android:textAlignment="center"
+        android:textColor="#9C27B0"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/resultView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        android:text="@string/transaction_successful"
+        android:textAlignment="center"
+        android:textColor="#4EAC0D"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.68" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

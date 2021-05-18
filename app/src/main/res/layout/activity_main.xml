@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/historyImgButton"
+        android:layout_width="235dp"
+        android:layout_height="235dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="83dp"
+        android:adjustViewBounds="true"
+        android:background="@color/Transparent"
+        android:contentDescription="@string/hist"
+        android:cropToPadding="false"
+        android:onClick="viewTransactionHistory"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/historyButtonText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/transferButtonText"
+        app:srcCompat="@drawable/history" />
+
+    <ImageButton
+        android:id="@+id/transferImgButton"
+        android:layout_width="wrap_content"
+        android:layout_height="235dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="76dp"
+        android:adjustViewBounds="true"
+        android:background="@color/Transparent"
+        android:contentDescription="@string/transfer"
+        android:cropToPadding="false"
+        android:onClick="viewCustomerList"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/transferButtonText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/transfer" />
+
+    <TextView
+        android:id="@+id/transferButtonText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="95dp"
+        android:text="@string/transfer_money"
+        android:textColor="#9C27B0"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/historyImgButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/transferImgButton" />
+
+    <TextView
+        android:id="@+id/historyButtonText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="70dp"
+        android:text="@string/view_transaction_nhistory"
+        android:textAlignment="center"
+        android:textColor="#9C27B0"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/historyImgButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

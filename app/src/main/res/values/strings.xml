@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Banking App</string>
+    <string name="start">START</string>
+    <string name="by">by</string>
+    <string name="name">Manaswi Vichare</string>
+    <string name="desc">Homepage</string>
+    <string name="basic">BASIC</string>
+    <string name="Banking">BANKING APP</string>
+    <string name="hist">History Page</string>
+    <string name="SENDER">SENDER</string>
+    <string name="TextView">TextView</string>
+    <string name="Receiver">RECEIVER</string>
+    <string name="Amount">AMOUNT</string>
+    <string name="status">STATUS:</string>
+    <string name="succ">SUCCESSFUL</string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="transfer">transfer</string>
+    <string name="transfer1">TODO</string>
+    <string name="enter_the_amount_to_be_transfered">ENTER THE AMOUNT TO BE TRANSFERED</string>
+    <string name="transfer2">TRANSFER</string>
+    <string name="transaction_successful">Transaction Successful!</string>
+    <string name="transaction_history">TRANSACTION HISTORY</string>
+    <string name="home">HOME</string>
+    <string name="back">back</string>
+    <string name="bank_name">Bank Name</string>
+    <string name="balance">Balance</string>
+    <string name="contact_no">Contact No</string>
+    <string name="username">USER DETAILS</string>
+    <string name="email_id">Email ID</string>
+    <string name="transfer_money">TRANSFER MONEY</string>
+    <string name="user_details">User Details</string>
+    <string name="current_bal_1000">Current Bal 1000</string>
+    <string name="view_transaction_nhistory">TRANSACTION HISTORY</string>
+    <string name="todo">TODO</string>
+
+
+</resources>
